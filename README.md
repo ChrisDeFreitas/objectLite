@@ -14,7 +14,7 @@ objectLite is a Javascript object database using SQLite to persist data, with fu
 - compress object list to string using zlib compression and base64 encoding (use for backup)
 - decompress a compressed string to a JSON string suitable for JSON.parse()
 - import/export provides basic functionality to transfer data between SQLite databases
-- all functionality built and tested with MochaJs and ChaiJs, and suitable for automated testing (gulp.watch())
+- all functionality built and tested with MochaJs and ChaiJs
 
 
 ## Usage
@@ -27,7 +27,7 @@ objectLite is a Javascript object database using SQLite to persist data, with fu
 ## Filtering Objects
 - ToDo: detail explanation, for now examine:  
 		-- objectList.js/opApply() for filter operators applied to lists  
-		-- objectList.js/opToWhere() for filter operators converted to where expressions  
+		-- objectList.js/opToWhere() for filter operators converted to SQL Where expressions  
 		-- ./test/list-test.js/test db.cntList() for operators tested  
 - this feature allows you to limit objects returned using an object syntax similar to TaffyDB, for example:  
  -- db.getList(list, {a:1)  
