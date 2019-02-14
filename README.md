@@ -13,8 +13,8 @@ objectLite is a Javascript object database using SQLite to persist data, with fu
 - object list functions ([obj1, ...]): count, get/filter, sort
 - compress object list to string using zlib compression and base64 encoding (use for backup)
 - decompress a compressed string to a JSON string suitable for JSON.parse()
-- simple import/export provides basic functionality to transfer data between SQLite databases
-- all functionality built and tested with MochaJs and ChaiJs suitable for automated testing (gulp.watch())
+- import/export provides basic functionality to transfer data between SQLite databases
+- all functionality built and tested with MochaJs and ChaiJs, and suitable for automated testing (gulp.watch())
 
 
 ## Usage
@@ -25,13 +25,14 @@ objectLite is a Javascript object database using SQLite to persist data, with fu
 
 
 ## Filtering Objects
-- ToDo: detail explanation, for now examine:
-		objectList.js/opApply() for list of filter operators
-		./test/list-test.js/test db.cntList() for operators tested
-- this feature allows you to limit objects returned using an object syntax similar to TaffyDB, for example
- -- db.getList(list, {a:1)
- -- db.getList(list, {a:{eq:1} )
- -- db.getList(list, {a:{like:'%peach%'} )
+- ToDo: detail explanation, for now examine:  
+		-- objectList.js/opApply() for filter operators applied to lists  
+		-- objectList.js/opToWhere() for filter operators converted to where expressions  
+		-- ./test/list-test.js/test db.cntList() for operators tested  
+- this feature allows you to limit objects returned using an object syntax similar to TaffyDB, for example:  
+ -- db.getList(list, {a:1)  
+ -- db.getList(list, {a:{eq:1} )  
+ -- db.getList(list, {a:{like:'%peach%'} )  
  - in table commands, SQL Where expressions can be used in place of the filter object
 
 
@@ -53,18 +54,19 @@ Also note, realmDB is a very good option if you can manage the license/pricing a
 
 
 ## Thanks To
-https://atom.io
-https://github.com/guilala/json-table-lite
-https://www.chaijs.com
-https://mochajs.org
-https://developer.mozilla.org
-https://www.naturaldocs.org
-https://github.com/felixge/node-stack-trace
-http://sqlite.org
-http://taffydb.com
+https://atom.io  
+https://github.com/guilala/json-table-lite  
+https://www.chaijs.com  
+https://mochajs.org  
+https://developer.mozilla.org  
+https://www.naturaldocs.org  
+https://github.com/mapbox/node-sqlite3  
+https://github.com/felixge/node-stack-trace  
+http://sqlite.org  
+http://taffydb.com  
 
 
 Good Luck!
 
-Chris DeFreitas
+Chris DeFreitas  
 chrisd@europa.com

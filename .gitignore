@@ -13,3 +13,4 @@ jsdoc.json
 #standard excludes
 node_modules/
 .ftpconfig
+.git-credentials
