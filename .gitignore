@@ -1,0 +1,15 @@
+
+#for now, exclude documentation because incomplete
+documentation
+jsdoc.json
+
+#exclude sqlite tables, they are built as needed
+*.sqlite
+*.db
+
+#include temp folder for console.js; doesn't work, added temp/.gitignore
+!temp/
+
+#standard excludes
+node_modules/
+.ftpconfig

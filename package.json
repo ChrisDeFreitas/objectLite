@@ -1,0 +1,24 @@
+{
+	"author": "Chris DeFreitas <chrisd@europa.com>",
+	"name": "objectLite",
+	"dependencies": {
+		"sqlite3": "^4.0.2",
+		"stack-trace": "0.0.10"
+	},
+	"devDependencies": {
+		"chai": "^4.1.2",
+		"mocha": "^5.2.0"
+	},
+	"description": "Javascript object database using SQLite",
+	"license": "UNLICENSED",
+	"repository": {},
+	"scripts": {
+		"test": "clear && node node_modules/mocha/bin/mocha --bail --check-leaks --use_strict test/test.js",
+		"listtest": "clear && node node_modules/mocha/bin/mocha --bail --check-leaks --use_strict test/list-test.js",
+		"misctest": "clear && node node_modules/mocha/bin/mocha --bail --check-leaks --use_strict test/misc-test.js",
+		"test?": "clear && node node_modules/mocha/bin/mocha --bail --check-leaks --prof --log-timer-events --use_strict --allow-uncaught --reporter dot",
+		"console": "clear && node console.js debug",
+		"gendocs": "clear && jsdoc -c jsdoc.json"
+	},
+	"version": "1.0.2"
+}
