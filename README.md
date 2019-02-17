@@ -11,6 +11,7 @@ Note, this module in use by a http://hapijs.com web application.  console.js con
 - SQL table functions: count, create, drop, exists, del, get, replace, set, struc
 - can supply an object list, a table name, or a full SQL command to some functions
 - replace function designed for large datasets; optimized with serialize(), transactions, and statements to speed processing
+- replace function designed for importing large datasets; optimized with serialize(), transactions, and statements to speed processing
 - objects filtered with SQL Where clause or filter objects similar to TaffyDB
 - object list functions ([obj1, ...]): count, get/filter, sort
 - compress object list to string using zlib compression and base64 encoding (use for backup)
