@@ -2,7 +2,7 @@
 
 objectLite is a Javascript object database using SQLite to persist data, functions to manipulate object arrays, and an import/export plugin system.
 
-Note, this module in use by a http://hapijs.com web application.  console.js contains functions used by  console and web applications.  Features with no tests or marked ToDo: are not in use; except for the transfer methods which are commented out because they are implementation specific.
+Note, this module in use by a http://hapijs.com web application.  console.js contains functions used by  console and web applications.  Features with no tests or marked ToDo: are not in use; except transfer method tests are disabled because they are implementation specific.
 
 
 ## Features
@@ -20,7 +20,7 @@ Note, this module in use by a http://hapijs.com web application.  console.js con
 
 
 ## Usage
-- available tests:
+- available tests:  
 	$ npm run test  
 	$ npm run listtest  
 	$ npm run misctest  
@@ -32,12 +32,12 @@ Note, this module in use by a http://hapijs.com web application.  console.js con
 
 
 ## Filtering Objects
+- this feature defines an object based syntax to query lists of objects.  
 - ToDo: provide an explanation of the object filtering logic
 - for now examine:  
 		-- objectList.js/opApply() for filter operators applied to lists  
 		-- objectList.js/opToWhere() for filter operators converted to SQL Where expressions  
 		-- ./test/list-test.js/test db.cntList() for operators tested  
-- this feature defines an object based syntax used to query lists of objects.  
 - similar to TaffyDB  
 - object list = [ {}, ... ]
 - filter list = [ filterObj, ... ]
