@@ -25,27 +25,26 @@ Note, this module in use by a http://hapijs.com web application.  console.js con
 	$ npm run listtest  
 	$ npm run misctest  
 	$ npm run compresstest
-- to use in your own prjoect just copy objectLite.js to your project folder
+- to use in your own project, copy objectLite.js to your project folder
 - see example code in console.js
-- see test scripts in package.json and ./test/ folder for detailed examples of all functionality
-- examine code in objectLite.js for arguments and comments
+- see objectLite.js for method notes and arguments
 
 
 ## Filtering Objects
-- this feature defines an object based syntax to query lists of objects.  
-- ToDo: provide an explanation of the object filtering logic
+- this is an object based syntax to query lists of objects.  
+- ToDo: provide a detailed explanation of the object filtering
 - for now examine:  
 		-- objectList.js/opApply() for filter operators applied to lists  
 		-- objectList.js/opToWhere() for filter operators converted to SQL Where expressions  
 		-- ./test/list-test.js/test db.cntList() for operators tested  
 - similar to TaffyDB  
 - object list = [ {}, ... ]
-- filter list = [ filterObj, ... ]
+- filter list = [ filterObject, ... ]
 - filter object = {key:value} || {key: {operator:value} }
 - key = a property of an object
 - operator = comparison operator defined in opApply() or opToWhere()
 - value = string or integer (testing required for array and object values)
-- example code:  
+- examples:  
  -- db.getList(list, {a:1} )  
  -- db.getList(list, {a:{eq:1} )  
  -- db.getList(list, {a:{like:'%peach%'} )  
@@ -53,7 +52,7 @@ Note, this module in use by a http://hapijs.com web application.  console.js con
 
 
  ## Why create a new module?
- I have used TaffyDB and json-table-lite, both met different needs.  Over time my needs grew to require a module that combined and expanded on both.  That is what objectLite is for me.  I hope this module is simple to use, flexible, and above all maintainable.
+ I have used TaffyDB and json-table-lite, both met different needs.  Over time my needs grew to require a module that combined and expanded on both. I hope this module is simple to use, flexible, and above all maintainable.
 
  Also note, realmDB is a very good option if you can manage the license/pricing and complexity.
 
@@ -71,6 +70,7 @@ Note, this module in use by a http://hapijs.com web application.  console.js con
 - document code with NaturalDocs, https://www.naturaldocs.org
 - complete set() method to update data with no PrimaryKey (need to allow row matching based on unchanged columns)
 - expand import/export functionality to include CSV and JSON files
+- add sample code to Usage section
 
 ## Thanks To
 https://atom.io  
