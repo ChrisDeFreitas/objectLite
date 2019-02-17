@@ -75,7 +75,7 @@ Note, this module in use by a http://hapijs.com web application.  console.js con
 ## Thanks To
 https://atom.io  
 https://www.chaijs.com  
-https://github.com/
+https://github.com/  
 https://github.com/guilala/json-table-lite  
 https://mochajs.org  
 https://developer.mozilla.org  
