@@ -9,7 +9,7 @@ Note, this module in use by a http://hapijs.com web application.  console.js con
 - full SQLite SQL usage with multiple tables per database file
 - simple key/value store via persist method
 - SQL table functions: count, create, drop, exists, del, get, replace, set, struc
-- can supply object list, table name, or full SQL command to some functions
+- can supply an object list, a table name, or a full SQL command to some functions
 - replace function designed for large datasets; optimized with serialize(), transactions, and statements to speed processing
 - objects filtered with SQL Where clause or filter objects similar to TaffyDB
 - object list functions ([obj1, ...]): count, get/filter, sort
