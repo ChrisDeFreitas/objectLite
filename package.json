@@ -9,13 +9,17 @@
 		"chai": "^4.1.2",
 		"mocha": "^5.2.0"
 	},
-	"description": "Javascript object database using SQLite",
+	"description": "Persistent Javascript object storage using sqlite and handy functions.",
 	"license": "UNLICENSED",
-	"repository": {},
+	"repository":  {
+      "type": "git",
+      "url": "https://github.com/ChrisDeFreitas/objectLite"
+    },
 	"scripts": {
 		"test": "clear && node node_modules/mocha/bin/mocha --bail --check-leaks --use_strict test/test.js",
 		"listtest": "clear && node node_modules/mocha/bin/mocha --bail --check-leaks --use_strict test/list-test.js",
 		"misctest": "clear && node node_modules/mocha/bin/mocha --bail --check-leaks --use_strict test/misc-test.js",
+		"compresstest": "clear && node node_modules/mocha/bin/mocha --bail --check-leaks --use_strict test/compress-test.js",
 		"test?": "clear && node node_modules/mocha/bin/mocha --bail --check-leaks --prof --log-timer-events --use_strict --allow-uncaught --reporter dot",
 		"console": "clear && node console.js debug",
 		"gendocs": "clear && jsdoc -c jsdoc.json"

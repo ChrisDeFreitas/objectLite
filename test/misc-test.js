@@ -51,27 +51,10 @@ let list = [
 	*/
 ]
 
-describe('Test objectLite misc methods', function() {
+describe('Test objectLite misc features', function() {
 	//before(function(){});
 
-	describe.skip(`db.compress() and db.decompress() tests`, function() {
-		let deflated = null
-
-    it(`should return compressed version of list as base64 string`, function() {
-			deflated = db.compress(list)
-			//log('Result:\n', deflated)
-	    expect(deflated).is.a('string')
-	  })
-		it(`should return decompressed list as string`, function() {
-			let result = db.decompress(deflated)
-			//log('Result:\n', result)
-			result = JSON.parse(result)
-	    expect(result).is.an('array')
-	  })
-
-	})
-
-	describe.skip('Test objectLite persist methods', function() {
+	describe('Test objectLite persist method', function() {
 		let key = 'test.persist.key', val='test.persist.val'
 
 		before( () => dbInit() )
@@ -140,8 +123,8 @@ describe('Test objectLite misc methods', function() {
 		})
 		after( () => dbClose() )
 	})
-
-	describe.skip('Test objectLite transfer method', function() {
+/*
+	describe('Test objectLite transfer method', function() {
 		let options = {
 			from:{
 				type:'sqlite',
@@ -163,7 +146,7 @@ describe('Test objectLite misc methods', function() {
 		describe(`test move userdata table from: "${options.from.file}" to:"${options.to.table}"`, function() {
 	    it(`should return true`, async function() {
 				let result = await db.transfer(options)
-				log('Result:\n', result)
+				//log('Result:\n', result)
 		    expect(result).is.true
 		  })
 		})
@@ -173,13 +156,14 @@ describe('Test objectLite misc methods', function() {
 				options.from.file = '/srv/nservices/data/heart/data/heart-users.db'
 				options.to.table = 'users20180909'		//'users'		//
 				let result = await db.transfer(options)
-				log('Result:\n', result)
+				//log('Result:\n', result)
 		    expect(result).is.true
 		  })
 		})
 
 		after( () => dbClose() )
 	})
+*/
 })
 
 function dbInit( afilename ){
