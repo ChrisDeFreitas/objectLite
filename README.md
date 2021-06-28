@@ -54,7 +54,7 @@ Note, this module in use by a http://hapijs.com web application.  console.js con
  ## Why create a new module?
  I have used TaffyDB and json-table-lite, both met different needs.  Over time my needs grew to require a module that combined and expanded on both. I hope this module is simple to use, flexible, and above all maintainable.
 
- Also note, realmDB is a very good option if you can manage the license/pricing and complexity.
+ Also note, realmDB is a very good option if you can manage the license/pricing and complexity.    And there are also the browser based databases: <a href='https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API'>IndexedDB API</a> and <a href='https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage'>Window.localStorage</a>
 
 
 ## ToDo
@@ -71,6 +71,10 @@ Note, this module in use by a http://hapijs.com web application.  console.js con
 - complete set() method to update data with no PrimaryKey (need to allow row matching based on unchanged columns)
 - expand import/export functionality to include CSV and JSON files
 - add sample code to Usage section
+  
+## Update 20210628  
+- minor updates  
+- exec: npm update  
 
 ## Thanks To
 https://atom.io  
