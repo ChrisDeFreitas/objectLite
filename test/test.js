@@ -459,7 +459,7 @@ describe('Test objectLite table and row methods', function() {
 	describe(`db.del() test`, function() {
 		before( () => dbInit() )
 
-		describe(`with filter object`, function() {
+		describe(`del() with filter object`, function() {
 	    it(`should delete record with rowid=1`, async function() {
 				let promise = await db.del('test1', {rowid:1})
 				//log('Results\n',promise)
@@ -473,7 +473,7 @@ describe('Test objectLite table and row methods', function() {
 	    })
 	  })
 
-		describe(`with where clause`, function() {
+		describe(`del() with filter/where string`, function() {
 	    it(`should delete record with rowid=2`, async function() {
 				let promise = await db.del('test1', 'rowid=2')
 				//log('Results\n',promise)

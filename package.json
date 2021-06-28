@@ -2,19 +2,19 @@
 	"author": "Chris DeFreitas <chrisd@europa.com>",
 	"name": "objectLite",
 	"dependencies": {
-		"sqlite3": "^4.0.2",
-		"stack-trace": "0.0.10"
+		"sqlite3": "^4.0.2"
 	},
 	"devDependencies": {
-		"chai": "^4.1.2",
-		"mocha": "^5.2.0"
+		"chai": "^4.3.4",
+		"mocha": "^9.0.1",
+		"stack-trace": "0.0.10"
 	},
 	"description": "Persistent Javascript object storage using sqlite and handy functions.",
 	"license": "UNLICENSED",
-	"repository":  {
-      "type": "git",
-      "url": "https://github.com/ChrisDeFreitas/objectLite"
-    },
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ChrisDeFreitas/objectLite"
+	},
 	"scripts": {
 		"test": "clear && node node_modules/mocha/bin/mocha --bail --check-leaks --use_strict test/test.js",
 		"listtest": "clear && node node_modules/mocha/bin/mocha --bail --check-leaks --use_strict test/list-test.js",
