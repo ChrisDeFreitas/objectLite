@@ -6,7 +6,7 @@
 	},
 	"devDependencies": {
 		"chai": "^4.3.4",
-		"mocha": "^9.0.1",
+		"mocha": "^9.2.2",
 		"stack-trace": "0.0.10"
 	},
 	"description": "Persistent Javascript object storage using sqlite and handy functions.",
